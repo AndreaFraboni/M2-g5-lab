@@ -10,12 +10,14 @@ public class EX4 : MonoBehaviour
         int[] Array = GeneraArray(20, 1, 10);
         StampaArray(Array);
 
-        TrovaMinimo(Array);
-        TrovaMassimo(Array);
-        Debug.Log("Valore MINIMO nell'array  = " + TrovaMinimo(Array));
-        Debug.Log("Valore MASSIMO nell'array = " + TrovaMassimo(Array));
-        TrovaMinimo2(Array);
-        TrovaMassimo2(Array);
+
+        int minimo = TrovaMinimo(Array);
+        int massimo = TrovaMassimo(Array);
+        Debug.Log("Valore MINIMO nell'array  = " + minimo);
+        Debug.Log("Valore MASSIMO nell'array = " + massimo);
+
+        TrovaMinimo_2(Array);
+        TrovaMassimo_2(Array);
     }
 
     int[] GeneraArray(int dimensioni, int minimo, int massimo)
@@ -67,7 +69,7 @@ public class EX4 : MonoBehaviour
         return valoresalvato;
     }
 
-    void TrovaMinimo2(int[] Array)
+    void TrovaMinimo_2(int[] Array)
     {
         int valoreletto;
         int valoresalvato1 = Array[0];
@@ -90,7 +92,7 @@ public class EX4 : MonoBehaviour
     }
 
 
-    void TrovaMassimo2(int[] Array)
+    void TrovaMassimo_2(int[] Array)
     {
         int valoreletto;
         int valoresalvato1 = Array[0];
